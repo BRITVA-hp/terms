@@ -1,0 +1,107 @@
+.data
+    position: relative
+    z-index: 2
+    margin-bottom: 75px
+    &__link
+        width: 100%
+        max-width: 300px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 2px
+        background: #4f545c
+        font-size: 18px
+        line-height: 23px
+        color: #fff
+        font-weight: 700
+        font-family: OpenSans, sans-serif
+        min-height: 84px
+        text-decoration: none
+        margin: 0 auto
+        transition: 0.3s
+        &:hover
+            background: #484d54
+        img
+            margin-left: 10px
+            vertical-align: middle
+    &__title
+        text-align: center
+        margin-bottom: 36px
+        span
+            white-space: nowrap
+    &__box
+        margin-bottom: 35px
+        &-row
+            display: flex
+            flex-direction: column
+            gap: 30px
+        &-item
+            display: flex
+            flex-direction: column
+            gap: 8px
+            position: relative
+            padding: 4px 22px 0
+            &::before
+                content: ""
+                position: absolute
+                width: 10px
+                height: 10px
+                left: 0
+                top: 0
+                background: #00aeef
+            &-title
+                font-size: 19px
+                line-height: 27px
+                color: #000
+                font-weight: 700
+                font-family: OpenSans, sans-serif
+            &-text
+                font-size: 17px
+                line-height: 27px
+                color: #000
+                font-weight: 300
+                font-family: OpenSans, sans-serif
+    &__row
+        display: flex
+        flex-direction: column
+    &__card
+        border-radius: 2px
+        background: #00aeef
+        width: 100%
+        max-width: max-content
+        margin: 0 auto 80px
+        padding: 38px 30px
+        margin-top: -40px
+        &-row
+            display: flex
+            flex-direction: column
+            gap: 24px
+            margin-bottom: 26px
+        &-item
+            display: flex
+            flex-direction: column
+            gap: 8px
+            &-title
+                font-size: 20px
+                line-height: 110%
+                color: #fff
+                font-weight: 400
+                font-family: OpenSans, sans-serif
+            &-text
+                font-size: 44px
+                line-height: 110%
+                color: #fff
+                font-weight: 700
+                font-family: OpenSans, sans-serif
+                &.small
+                    font-size: 39px
+        &-footer
+            font-size: 20px
+            line-height: 130%
+            color: #fff
+            font-weight: 400
+            font-family: OpenSans, sans-serif
+            strong
+                font-size: 23px
+                font-weight: 700
+                text-transform: uppercase

@@ -1,0 +1,152 @@
+.header
+    background: #4f545c
+    padding: 25px 20px 47px
+    &__row
+        display: flex
+        flex-direction: column
+        gap: 28px
+        align-items: center
+    &__box
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__city
+        &-title
+            font-size: 18px
+            line-height: 110%
+            color: #ffffff
+            font-weight: 400
+            font-family: OpenSans, sans-serif
+            display: flex
+            justify-content: flex-end
+            gap: 0 9px
+            flex-wrap: wrap
+            align-items: center
+        &-btn
+            background: none
+            border: none
+            color: #00aeef
+            padding-bottom: 1px
+            border-bottom: 1px solid #00aeef
+            cursor: pointer
+        &-menu
+            position: fixed
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            z-index: 198
+            padding: 66px 30px
+            background: #031016
+            display: flex
+            justify-content: center
+            align-items: flex-start
+            opacity: 0
+            visibility: hidden
+            transition: 0.3s
+            overflow: auto
+            &.active
+                opacity: 1
+                visibility: visible
+        &-ul
+            width: 100%
+            padding: 50px 0 40px
+            display: flex
+            flex-direction: column
+            align-items: center
+            border-radius: 3px
+            background: #fff
+            position: relative
+        &-list-title
+            font-size: 23px
+            line-height: 100%
+            color: #000000
+            font-weight: 700
+            font-family: OpenSans, sans-serif
+            text-align: center
+            padding: 10px 0
+        &-li
+            padding: 10px 0
+            cursor: pointer
+            font-size: 17px
+            line-height: 16px
+            color: #000000
+            font-weight: 700
+            font-family: OpenSans, sans-serif
+            text-align: center
+            width: 100%
+            &.active
+                color: #00aeef
+            &:hover
+                color: #00aeef
+        &-close
+            position: absolute
+            right: 0
+            top: 0
+            border-radius: 3px
+            width: 46px
+            height: 46px
+            display: flex
+            align-items: center
+            justify-content: center
+            background: #4f545c
+            cursor: pointer
+            border: none
+            img
+                &:last-child
+                    display: none
+            &:hover
+                img
+                    &:first-child
+                        display: none
+                    &:last-child
+                        display: block
+    &__block
+        display: flex
+        flex-direction: column
+        gap: 22px
+    &__wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 22px
+    &__tel
+        font-size: 25px
+        line-height: 110%
+        color: #fff
+        font-weight: 700
+        font-family: OpenSans, sans-serif
+        text-decoration: none
+        white-space: nowrap
+    &__social
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 20px
+        &-link
+            display: flex
+            img
+                &:last-child
+                    display: none
+            &:hover
+                img
+                    &:first-child
+                        display: none
+                    &:last-child
+                        display: block
+    &__button
+        background: transparent
+        border-radius: 3px
+        border: 1px solid #fff
+        color: #fff
+        max-width: 198px
+        min-width: 198px
+        font-size: 18px
+        line-height: 110%
+        min-height: 53px
+        font-weight: 300
+        &:hover
+            background: #fff
+            color: #000
+            

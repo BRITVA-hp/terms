@@ -1,0 +1,44 @@
+.advantages
+    margin-bottom: 75px
+    &__title
+        margin-bottom: 35px
+    &__row
+        display: flex
+        flex-direction: column
+        gap: 20px
+    &__card
+        border-radius: 2px
+        background: #4f545c
+        padding: 48px 0 50px 29px
+        &-title
+            font-size: 26px
+            line-height: 36px
+            text-transform: uppercase
+            color: #fff
+            font-weight: 700
+            font-family: OpenSans, sans-serif
+            margin-bottom: 15px
+            padding: 0 20px 0 0
+            span
+                position: relative
+                &::after
+                    content: ""
+                    position: absolute
+                    left: calc(100% + 15px)
+                    top: 50%
+                    transform: translateY(-50%)
+                    height: 19px
+                    width: 8px
+                    background: #00aeef
+        &-text
+            width: 100%
+            font-size: 19px
+            line-height: 29px
+            color: #fff
+            font-weight: 300
+            font-family: OpenSans, sans-serif
+            padding-bottom: 24px
+            border-bottom: 1px solid #fff
+            span
+                max-width: 260px
+                display: block

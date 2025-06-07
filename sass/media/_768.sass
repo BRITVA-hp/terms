@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px)
+  .container
+    max-width: 720px
+
+  .advantages
+    &__row
+      display: grid
+      grid-template-columns: 1fr 1fr
+    &__card
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+  .main
+    padding-top: 90px
+    &__title
+      position: relative
+      align-items: flex-start
+      max-width: max-content
+      font-size: 80px
+      margin-bottom: 20px
+      &-second
+        position: absolute
+        top: 100%
+        left: calc(100% - 70px)
+    &__subtitle
+      text-align: left
+      margin-bottom: 40px
+    &__row
+      flex-direction: row
+      max-width: 720px
+      width: 100%
+      justify-content: space-between

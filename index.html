@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <title>Городские термы</title>
+
+</head>
+<body>
+
+  <header class="header section">
+    <div class="container header__container">
+      <div class="header__row">
+        <div class="header__box">
+          <div class="header__logo">
+            <picture class="header__logo-img">
+              <source media="(min-width: 1024px)" srcset="img/logo-desktop.png">
+              <img src="img/logo.png" alt="terms">
+            </picture>
+          </div>
+          <div class="header__city">
+            <div class="header__city-title">
+              <span>Ваш город:</span>
+              <div class="header__city-content">
+                <button class="header__city-btn" id="city-btn">Самара</button>
+                <div class="header__city-menu" id="city-menu">
+                  <div class="header__city-ul">
+                    <button class="header__city-close" id="city-close">
+                      <img src="img/close.png" alt="close">
+                      <img src="img/close-hover.png" alt="close">
+                    </button>
+                    <div class="header__city-list-title">Выберите город</div>
+                    <div class="header__city-li">Нижнекамск</div>
+                    <div class="header__city-li">Самара</div>
+                    <div class="header__city-li">Воткинск</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__block">
+          <a href="tel:88002506355" class="header__tel">8 (800) 250-63-55</a>
+          <div class="header__wrap">
+            <div class="header__social">
+              <a href="#" class="header__social-link">
+                <img src="img/whatsapp.png" alt="whatsApp">
+                <img src="img/whatsapp-hover.png" alt="whatsApp">
+              </a>
+              <a href="#" class="header__social-link">
+                <img src="img/vk.png" alt="vkontakte">
+                <img src="img/vk-hover.png" alt="vkontakte">
+              </a>
+              <a href="#" class="header__social-link">
+                <img src="img/tg.png" alt="telegram">
+                <img src="img/tg-hover.png" alt="telegram">
+              </a>
+            </div>
+            <button class="button header__button">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /.header section -->
+
+  <main>
+    <section class="section main">
+      <div class="main__bg">
+        <img src="img/main/bg.webp" alt="terms">
+      </div>
+      <div class="container main__container">
+        <div class="main__box">
+          <h1 class="main__title">
+            <span class="main__title-first">городские</span>
+            <span class="main__title-second">термы</span>
+          </h1>
+          <h2 class="main__subtitle">Ваш готовый бизнес <br> с высокой доходностью</h2>
+          <div class="main__row">
+            <div class="main__item">Разработка концепта</div>
+            <div class="main__item">Франшиза</div>
+            <div class="main__item">Управление</div>
+            <div class="main__item">Консалтинг</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.section main -->
+
+    <section class="section data">
+      <div class="container data__container">
+        <div class="data__row">
+          <div class="data__card">
+            <div class="data__card-row">
+              <div class="data__card-item">
+                <div class="data__card-item-title">Окупаемость</div>
+                <div class="data__card-item-text">2 года</div>
+              </div>
+              <div class="data__card-item">
+                <div class="data__card-item-title">Рентабельность</div>
+                <div class="data__card-item-text">от 50%</div>
+              </div>
+              <div class="data__card-item">
+                <div class="data__card-item-title">Средний чек</div>
+                <div class="data__card-item-text small">600 до 2000 ₽</div>
+              </div>
+            </div>
+            <div class="data__card-footer">Стабильный поток гостей <br> <strong>круглый год</strong></div>
+          </div>
+          <div class="data__box">
+            <h3 class="section__title data__title">Инвестируйте <br> <span>в проверенную</span> систему</h3>
+            <div class="data__box-row">
+              <div class="data__box-item">
+                <div class="data__box-item-title">Разрабатываем концепты. Корректируем существующие.</div>
+                <div class="data__box-item-text">Создаем уникальные проекты под Ваш регион</div>
+              </div>
+              <div class="data__box-item">
+                <div class="data__box-item-title">Предлагаем прибыльную франшизу</div>
+                <div class="data__box-item-text">Запустите успешный термальный комплекс по готовой модели</div>
+              </div>
+              <div class="data__box-item">
+                <div class="data__box-item-title">Оказываем консалтинговые и консультационные услуги</div>
+                <div class="data__box-item-text">Помогаем на всех этапах от строительства до маркетинга</div>
+              </div>
+              <div class="data__box-item">
+                <div class="data__box-item-title">Берем комплексы под управление</div>
+                <div class="data__box-item-text">Обеспечиваем высокую прибыль, репутацию и безопасность</div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="data__link">
+            <span>
+              <span>Получить предложение <br> по концепту</span>
+              <img src="img/data/arrow.png" alt="arrow">
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- /.section data -->
+
+    <section class="section why">
+      <div class="container why__container why__container--title">
+        <h3 class="section__title why__title">Почему инвесторы и застройщики <span>выбирают</span> <b>городские термы</b></h3>
+      </div>
+      <div class="container why__container">
+        <div class="why__row">
+          <div class="why__window">
+            <div class="why__field swiper-wrapper">
+              <div class="why__card swiper-slide">
+                <img src="img/why/img.webp" alt="why">
+              </div>
+              <div class="why__card swiper-slide">
+                <img src="img/why/img.webp" alt="why">
+              </div>
+              <div class="why__card swiper-slide">
+                <img src="img/why/img.webp" alt="why">
+              </div>
+              <div class="why__card swiper-slide">
+                <img src="img/why/img.webp" alt="why">
+              </div>
+            </div>
+          </div>
+          <div class="why__box">
+            <div class="why__box-item">
+              <div class="why__box-item-line"></div>
+              <div class="why__box-item-content">
+                <div class="why__box-item-title">опыт 10 лет</div>
+                <div class="why__box-item-text">В сфере Термального бизнеса</div>
+              </div>
+            </div>
+            <div class="why__box-item">
+                <div class="why__box-item-line"></div>
+                <div class="why__box-item-content">
+                  <div class="why__box-item-title">Развитие сети</div>
+                  <div class="why__box-item-text">Более 24 проектов построенных с нашим участием</div>
+                </div>
+            </div>
+            <div class="why__box-item">
+              <div class="why__box-item-line"></div>
+              <div class="why__box-item-content">
+                <div class="why__box-item-title">Растущий рынок</div>
+                <div class="why__box-item-text">на данный момент рынок только начинает свой рост и в бедующем вырастет с 200 миллиардов до 2 триллионов рублей</div>
+              </div>
+            </div>
+            <div class="why__box-item">
+              <div class="why__box-item-line"></div>
+              <div class="why__box-item-content">
+                <div class="why__box-item-title">Высокая доходность</div>
+                <div class="why__box-item-text">Стабильный бизнес,  не зависящий от сезонности</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__interface">
+          <button class="slider__btn why__prev">
+            <img src="img/arrow-prev.png" alt="previous">
+          </button>
+          <button class="slider__btn why__next">
+            <img src="img/arrow-next.png" alt="next">
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- /.section why -->
+
+    <section class="section king">
+      <div class="container king__container">
+        <div class="king__row">
+          <div class="king__photo">
+            <img src="img/king/photo.webp" alt="king">
+          </div>
+          <div class="king__box">
+            <div class="king__quotes">
+              <img src="img/king/quotes.png" alt="quotes">
+            </div>
+            <div class="king__text">Приятно, когда современный растущий бизнес уже продуман до мелочей и постоянно набирает рост. И Вы можете стать его частью!</div>
+            <div class="king__text last"><b>Откройте Термы в своём городе и обеспечьте горожан прекрасным здоровым отдыхом, а себя - безоблачным будущим.</b></div>
+            <div class="king__info">
+              <div class="king__info-box">
+                <div class="king__info-title">Бычков Юрий <br> Федорович</div>
+                <div class="king__info-text">Создатель франшизы "Городские Термы" Почетный строитель России</div>
+              </div>
+              <div class="king__info-sign">
+                <img src="img/king/sign.png" alt="sign">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.section king -->
+
+    <section class="section profit">
+      <div class="container profit__container">
+        <h3 class="section__title profit__title">Действующие Термы, которые приносят <span>доход!</span></h3>
+        <div class="profit__window">
+          <div class="profit__field swiper-wrapper">
+            <div class="profit__card swiper-slide">
+              <div class="profit__card-img">
+                <img src="img/profit/photo.png" alt="profit">
+              </div>
+              <div class="profit__card-content">
+                <div class="profit__card-title">Самарские термы</div>
+                <div class="profit__card-text">Крупнейший Термальный комплекс в регионе 24 000 м2</div>
+                <a href="#" class="profit__card-button button">Перейти на сайт</a>
+              </div>
+            </div>
+            <div class="profit__card swiper-slide">
+              <div class="profit__card-img">
+                <img src="img/profit/photo.png" alt="profit">
+              </div>
+              <div class="profit__card-content">
+                <div class="profit__card-title">Самарские термы</div>
+                <div class="profit__card-text">Крупнейший Термальный комплекс в регионе 24 000 м2</div>
+                <a href="#" class="profit__card-button button">Перейти на сайт</a>
+              </div>
+            </div>
+            <div class="profit__card swiper-slide">
+              <div class="profit__card-img">
+                <img src="img/profit/photo.png" alt="profit">
+              </div>
+              <div class="profit__card-content">
+                <div class="profit__card-title">Самарские термы</div>
+                <div class="profit__card-text">Крупнейший Термальный комплекс в регионе 24 000 м2</div>
+                <a href="#" class="profit__card-button button">Перейти на сайт</a>
+              </div>
+            </div>
+            <div class="profit__card swiper-slide">
+              <div class="profit__card-img">
+                <img src="img/profit/photo.png" alt="profit">
+              </div>
+              <div class="profit__card-content">
+                <div class="profit__card-title">Самарские термы</div>
+                <div class="profit__card-text">Крупнейший Термальный комплекс в регионе 24 000 м2</div>
+                <a href="#" class="profit__card-button button">Перейти на сайт</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__interface profit__interface">
+          <button class="slider__btn profit__prev">
+            <img src="img/arrow-prev.png" alt="previous">
+          </button>
+          <button class="slider__btn profit__next">
+            <img src="img/arrow-next.png" alt="next">
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- /.section profit -->
+
+    <section class="section advantages">
+      <div class="container advantages__container">
+        <h3 class="section__title advantages__title">Что <span>получает</span> инвестор?</h3>
+        <div class="advantages__row">
+          <div class="advantages__card">
+            <div class="advantages__card-title">Анализ <br> <span>локации</span></div>
+            <div class="advantages__card-text"><span>Анализируем Ваш участок, Ваш объект недвижимости</span></div>
+          </div>
+          <div class="advantages__card">
+            <div class="advantages__card-title">Разработка <br> концепта и <br> <span>проектирование</span></div>
+            <div class="advantages__card-text"><span>Опытные подрядчики, прозрачный бюджет</span></div>
+          </div>
+          <div class="advantages__card">
+            <div class="advantages__card-title">Управление <br> <span>и маркетинг</span></div>
+            <div class="advantages__card-text"><span>Ваш комплекс выходит на прибыль с первого месяца</span></div>
+          </div>
+          <div class="advantages__card">
+            <div class="advantages__card-title">Готовая <br> клиентская база <br> <span>под ключ</span></div>
+            <div class="advantages__card-text"><span>Отложенные бронирования, подписчики, корпоративные клиенты</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.section advantages -->
+
+    <section class="section calc">
+      <div class="container calc__container">
+        <h3 class="section__title calc__title">Вы ищите <span>надёжного</span> бизнес- <br> партнёра и выгодное предложение?</h3>
+        <div class="calc__badge">
+          <div class="calc__badge-title">Обратите внимание</div>
+          <div class="calc__badge-text">на Нишу, растущую каждый год</div>
+        </div>
+        <div class="calc__box">
+          <div class="calc__content">
+            <div class="calc__box-title">Онлайн-калькулятор <br> годовой прибыли</div>
+            <div class="calc__box-text">Введите ориентировочную площадь будущего Термального Комплекса</div>
+            <form action="#" class="calc__form">
+              <div class="input-group calc__input-group">
+                <input placeholder="кв. м" type="text" class="calc__input">
+              </div>
+              <button class="button calc__button">Рассчитать прибыль</button>
+            </form>
+            <div class="calc__row">
+              <div class="calc__info">*Расчет ориентировочный <br> и не является окончательным</div>
+              <a href="#" class="data__link calc__link">
+                <span>
+                  <span>Получить персональное <br> предложение</span>
+                  <img src="img/data/arrow.png" alt="arrow">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.section calc -->
+
+    <section class="section spa">
+      <div class="container spa__container">
+        <h3 class="section__title spa__title">Городские Термы – <span>это Городской <br> Курорт</span> для оздоровления всего населения</h3>
+        <div class="spa__row">
+          <div class="spa__box">
+            <div class="spa__subtitle">и доступный отдых <br> с максимальным комплексом услуг:</div>
+            <div class="spa__text">
+              <p>Бассейны, купели, сауны, бани, хамамы и парные с правильно подобранной влажностью и температурой, надежные, безопасные и с безотказным оборудованием.</p>
+              <p>Разнообразие услуг и возможность найти что-то именно для себя.</p>
+              <p>Сауны, бани, парные и хамамы дополнительно оснащаются разработанным нами оборудованием, которое создаёт уникальные эффекты.</p>
+            </div>
+          </div>
+          <div class="spa__img">
+            <img src="img/spa/photo.webp" alt="spa">
+          </div>
+        </div>
+        <a href="#" class="data__link spa__link">
+          <span>
+            <span>Получить персональное <br> предложение</span>
+            <img src="img/data/arrow.png" alt="arrow">
+          </span>
+        </a>
+      </div>
+    </section>
+    <!-- /.section spa -->
+
+    <section class="section complex">
+      <div class="container complex__container">
+        <h3 class="section__title complex__title"><span>Состав</span> комплекса</h3>
+        <div class="complex__subtitle">Включает в себя различные бассейны, сауны, спа-центры и другие удобства для полноценного отдыха и оздоровления</div>
+        <div class="complex__window">
+          <div class="complex__field swiper-wrapper">
+            <div class="complex__card swiper-slide">
+              <div class="complex__card-img">
+                <img src="img/complex/photo1.webp" alt="complex">
+              </div>
+              <div class="complex__card-content">
+                <div class="complex__card-num">01</div>
+                <div class="complex__card-box">
+                  <div class="complex__card-title">Бассейны</div>
+                  <div class="complex__card-ul">
+                    <div class="complex__card-li">Термальный</div>
+                    <div class="complex__card-li">«Мёртвое море»</div>
+                    <div class="complex__card-li">Детский</div>
+                    <div class="complex__card-li">Холодный</div>
+                    <div class="complex__card-li">Горячий</div>
+                    <div class="complex__card-li">Джакузи</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="complex__card swiper-slide">
+              <div class="complex__card-img">
+                <img src="img/complex/photo2.webp" alt="complex">
+              </div>
+              <div class="complex__card-content">
+                <div class="complex__card-num">02</div>
+                <div class="complex__card-box">
+                  <div class="complex__card-title">Хамамы и спа</div>
+                  <div class="complex__card-ul">
+                    <div class="complex__card-li">Турецкий</div>
+                    <div class="complex__card-li">Фруктовый</div>
+                    <div class="complex__card-li">Цветочный</div>
+                    <div class="complex__card-li">Тропический</div>
+                    <div class="complex__card-li">4 стихии</div>
+                    <div class="complex__card-li">Зона грязевых процедур</div>
+                    <div class="complex__card-li">Тёплый камень</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="complex__card swiper-slide">
+              <div class="complex__card-img">
+                <img src="img/complex/photo3.webp" alt="complex">
+              </div>
+              <div class="complex__card-content">
+                <div class="complex__card-num">03</div>
+                <div class="complex__card-box">
+                  <div class="complex__card-title">Бани и парные</div>
+                  <div class="complex__card-ul">
+                    <div class="complex__card-li">Русская парная</div>
+                    <div class="complex__card-li">Нефритовая парная</div>
+                    <div class="complex__card-li">Татарская баня «Мунча»</div>
+                    <div class="complex__card-li">Фурако</div>
+                    <div class="complex__card-li">Бани индивидуального парения</div>
+                    <div class="complex__card-li">Баня «Танк»</div>
+                    <div class="complex__card-li">Более 400 разработанных саун и бань </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="complex__card swiper-slide">
+              <div class="complex__card-img">
+                <img src="img/complex/photo4.webp" alt="complex">
+              </div>
+              <div class="complex__card-content">
+                <div class="complex__card-num">04</div>
+                <div class="complex__card-box">
+                  <div class="complex__card-title">Сауны</div>
+                  <div class="complex__card-ul">
+                    <div class="complex__card-li">Гималайская соляная с сильвинитом</div>
+                    <div class="complex__card-li">Кедровая</div>
+                    <div class="complex__card-li">Холодная</div>
+                    <div class="complex__card-li">Песчаная</div>
+                    <div class="complex__card-li">Соляная градирня</div>
+                    <div class="complex__card-li">Термальная</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="complex__card swiper-slide">
+              <div class="complex__card-img">
+                <img src="img/complex/photo5.webp" alt="complex">
+              </div>
+              <div class="complex__card-content">
+                <div class="complex__card-num">05</div>
+                <div class="complex__card-box">
+                  <div class="complex__card-title">Развлечения</div>
+                  <div class="complex__card-ul">
+                    <div class="complex__card-li">Детский аквапарк</div>
+                    <div class="complex__card-li">Аквагорки</div>
+                    <div class="complex__card-li">Комната впечатлений</div>
+                    <div class="complex__card-li">Пенные вечеринки</div>
+                    <div class="complex__card-li">Аквааэробика</div>
+                    <div class="complex__card-li">Практики йоги</div>
+                    <div class="complex__card-li">Гвоздестояние</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="complex__card swiper-slide">
+              <div class="complex__card-img">
+                <img src="img/complex/photo6.webp" alt="complex">
+              </div>
+              <div class="complex__card-content">
+                <div class="complex__card-num">06</div>
+                <div class="complex__card-box">
+                  <div class="complex__card-title">Дополнительные услуги</div>
+                  <div class="complex__card-ul">
+                    <div class="complex__card-li">Кафе</div>
+                    <div class="complex__card-li">Столовые</div>
+                    <div class="complex__card-li">Бары</div>
+                    <div class="complex__card-li">Массаж</div>
+                    <div class="complex__card-li">Пилинг</div>
+                    <div class="complex__card-li">Магазины</div>
+                    <div class="complex__card-li">Фудкорты</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="complex__info">
+          <div class="complex__info-title">Превращаем объекты недвижимости <br> и земельные участки</div>
+          <div class="complex__info-subtitle">в прибыльные городские курорты</div>
+          <div class="complex__info-row">
+            <div class="complex__info-card before">
+              <img src="img/complex/before.webp" alt="before">
+              <div class="complex__info-card-label before">До</div>
+            </div>
+            <div class="complex__info-card after">
+              <img src="img/complex/before.webp" alt="before">
+              <div class="complex__info-card-label after">После</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

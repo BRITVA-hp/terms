@@ -1,0 +1,66 @@
+.king
+    padding-bottom: 86px
+    &__row
+        display: flex
+        flex-direction: column
+        gap: 50px
+    &__photo
+        padding: 0 0 25px 20px
+        display: flex
+        width: 320px
+        min-width: 320px
+        margin: 0 auto
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            width: 130px
+            height: 103px
+            left: 0
+            bottom: 0
+            background: #93cf1a
+            border-radius: 3px
+        img
+            position: relative
+            z-index: 2
+    &__quotes
+        width: 38px
+        margin-bottom: 22px
+        display: flex
+    &__text
+        font-size: 18px
+        line-height: 30px
+        color: #000
+        font-weight: 300
+        font-family: OpenSans, sans-serif
+        margin-bottom: 16px
+        b
+            font-weight: 700
+        &.last
+            margin-bottom: 28px
+    &__info
+        width: 100%
+        padding-left: 18px
+        border-left: 1px solid #000
+        position: relative
+        &-sign
+            position: absolute
+            top: 5px
+            left: 188px
+            width: 130px
+            display: flex
+        &-title
+            font-size: 21px
+            line-height: 29px
+            text-transform: uppercase
+            color: #000
+            font-weight: 700
+            font-family: OpenSans, sans-serif
+            margin-bottom: 8px
+            max-width: 170px
+        &-text
+            font-size: 17px
+            line-height: 24px
+            color: #595858
+            font-weight: 300
+            font-family: OpenSans, sans-serif
