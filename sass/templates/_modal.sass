@@ -14,13 +14,43 @@
     visibility: hidden
     transition: 0.3s
     overflow: auto
+    .form, .form__success
+        display: none
     &--active
         opacity: 1
         visibility: visible
+        .form, .form__success
+            display: flex
     &__container
         width: 100%
         display: flex
-        align-items: center
+        align-items: flex-start
         min-height: 100%
         justify-content: center
-        padding: 16px
+    &__dialog
+        position: relative
+        width: 100%
+        max-width: 655px
+    &__close
+        position: absolute
+        right: 0
+        top: 0
+        cursor: pointer
+        background: #4f545c
+        border: none
+        width: 44px
+        height: 44px
+        border-radius: 3px
+        display: flex
+        align-items: center
+        justify-content: center
+        z-index: 3
+        img
+            &:last-child
+                display: none
+        &:hover
+            img
+                &:first-child
+                    display: none
+                &:last-child
+                    display: block

@@ -1,6 +1,22 @@
 .slider
     &__interface
         display: none
+        justify-content: center
+        margin-top: -40px
+        position: relative
+        z-index: 2
+    &__btn
+        width: 114px
+        height: 81px
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        background: #00aeef
+        border: none
+        transition: 0.3s
+        &:hover
+            background: #1588bd
     
 .interface-circle
     display: flex
@@ -87,3 +103,17 @@
             &__success
                 visibility: visible
                 opacity: 1
+
+.breadcrumbs
+    margin: 58px auto 62px
+    &__row
+        display: flex
+        align-items: center
+        gap: 12px
+        flex-wrap: wrap
+    &__link
+        font-size: 18px
+        line-height: 110%
+        color: #a6a6a6
+        font-weight: 400
+        font-family: OpenSans, sans-serif

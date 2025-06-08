@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <title>Городские термы</title>
+
+</head>
+<body>
+
+  <header class="header section">
+    <div class="container header__container">
+      <div class="header__row">
+        <div class="header__box">
+          <div class="header__logo">
+            <picture class="header__logo-img">
+              <source media="(min-width: 1024px)" srcset="img/logo-desktop.png">
+              <img src="img/logo.png" alt="terms">
+            </picture>
+          </div>
+          <div class="header__city">
+            <div class="header__city-title">
+              <span>Ваш город:</span>
+              <div class="header__city-content">
+                <button class="header__city-btn" id="city-btn">Самара</button>
+                <div class="header__city-menu" id="city-menu">
+                  <div class="header__city-ul">
+                    <button class="header__city-close" id="city-close">
+                      <img src="img/close.png" alt="close">
+                      <img src="img/close-hover.png" alt="close">
+                    </button>
+                    <div class="header__city-list-title">Выберите город</div>
+                    <div class="header__city-li">Нижнекамск</div>
+                    <div class="header__city-li">Самара</div>
+                    <div class="header__city-li">Воткинск</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__block">
+          <a href="tel:88002506355" class="header__tel">8 (800) 250-63-55</a>
+          <div class="header__wrap">
+            <div class="header__social">
+              <a href="#" class="header__social-link">
+                <img src="img/whatsapp.png" alt="whatsApp">
+                <img src="img/whatsapp-hover.png" alt="whatsApp">
+              </a>
+              <a href="#" class="header__social-link">
+                <img src="img/vk.png" alt="vkontakte">
+                <img src="img/vk-hover.png" alt="vkontakte">
+              </a>
+              <a href="#" class="header__social-link">
+                <img src="img/tg.png" alt="telegram">
+                <img src="img/tg-hover.png" alt="telegram">
+              </a>
+            </div>
+            <button data-modal class="button header__button">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /.header section -->
+
+  <div class="concept__burger">
+    <div class="concept__burger-line"></div>
+    <div class="concept__burger-line"></div>
+    <div class="concept__burger-line"></div>
+  </div>
+
+  <main>
+
+    <div class="breadcrumbs section">
+        <div class="container breadcrumbs__container">
+            <div class="breadcrumbs__row">
+                <a href="/" class="breadcrumbs__link">Главная</a>
+                <img src="img/breadcrumbs-arrow.png" alt="arrow">
+                <a class="breadcrumbs__link">Что входит в концепт</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="section concept">
+        <div class="container concept__container">
+            <h1 class="concept__title">Что входит в <span>концепт</span></h1>
+            <div class="concept__row">
+                <div class="concept__content">
+                    <p>Концепт необходим для того, чтобы объект приносил Вам максимальную прибыль. При правильном (точном) исполнении концепта Вы будете получать максимальную прибыль с каждого квадратного метра Вашей площади.</p>
+                    <img src="img/concept/photo1.webp" alt="photo">
+                    <h2>Для разработки концепта проводится <br> анализ объекта:</h2>
+                    <ul>
+                        <li>Локация, окружение, особенности зем.участка/объекта, подъезды и т.п. Определяется  оптимальная площадь будущего комплекса. При этом учитываются возможности и желания Заказчика;</li>
+                        <li>Обеспечения ресурсами: электроэнергия, водоснабжение и водоотведение, газоснабжение (теплоснабжение);</li>
+                        <li>Просчет посещаемости комплекса, его максимальной наполняемости (с учетом внешних факторов и с учетом внутренних возможностей  комплекса). Определяются с позиции оптимальности все элементы наполнения пространства, технологическая последовательность и размеры помещений, при этом учитывается не только немецкий опыт, но и опыт и наработки наших действующих комплексов;</li>
+                    </ul>
+                    <div class="concept__content-row">
+                        <div class="concept__content-slider">
+                            <div class="concept__content-window">
+                                <div class="concept__content-field swiper-wrapper">
+                                    <div class="concept__content-card swiper-slide">
+                                        <img src="img/concept/photo2.webp" alt="photo">
+                                    </div>
+                                    <div class="concept__content-card swiper-slide">
+                                        <img src="img/concept/photo2.webp" alt="photo">
+                                    </div>
+                                    <div class="concept__content-card swiper-slide">
+                                        <img src="img/concept/photo2.webp" alt="photo">
+                                    </div>
+                                    <div class="concept__content-card swiper-slide">
+                                        <img src="img/concept/photo2.webp" alt="photo">
+                                    </div>
+                                    <div class="concept__content-card swiper-slide">
+                                        <img src="img/concept/photo2.webp" alt="photo">
+                                    </div>
+                                    <div class="concept__content-card swiper-slide">
+                                        <img src="img/concept/photo2.webp" alt="photo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__interface concept__interface">
+                                <button class="slider__btn concept-arrow-prev">
+                                    <img src="img/arrow-prev.png" alt="previous">
+                                </button>
+                                <button class="slider__btn concept-arrow-next">
+                                    <img src="img/arrow-next.png" alt="next">
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="green">
+                            <li>В концепте сбалансированы площади входных групп, рецепции, саун, бань, бассейнов и уличных зон, зон размещения людей. </li>
+                            <li>В концепте учтены основы правил охраны труда, техники безопасности, эргономичность помещений.</li>
+                            <li>Проработаны условия, при которых постоянный поток посетителей будет комфортным и дадут людям время для комфортного времяпрепровождения</li>
+                            <li>Обеспечены условия, при которых люди будут возвращаться к Вам снова и снова</li>
+                        </ul>
+                    </div>
+                    <p>Точное следование концепту гарантирует максимально быстрый и эффективный возврат инвестиций.</p>
+                    <h3>Что вы получаете с концептом:</h3>
+                    <span class="concept__content-row">
+                        <ol>
+                            <li>Разработка концепции максимально эффективного использования ЗУ/здания, привязанного к объекту/ земельному участку (ориентировочно 35 стр.).</li>
+                            <li>Выдача рекомендуемых показателей необходимых мощностей.</li>
+                            <li>Составление технического задания (ориентировочно 55 стр.) на проектирование на основе концепта с  приложением  технологических карт по основным помещениям и указанием:</li>
+                        </ol>
+                        <img src="img/concept/photo3.webp" alt="photo">
+                    </span>
+                    <ul class="pl">
+                        <li>Перечень необходимого основного тех. оборудования и рекомендованных поставщиков,</li>
+                        <li>основных материалов (вид, качество, рекоменд. цена),</li>
+                        <li>технических и дизайнерских решений, отдельных узлов</li>
+                    </ul>
+                    <ol start="4">
+                        <li>Регламент работы с технологическими картами основных помещений.</li>
+                        <li>
+                            Тех. задание на разработку рабочей документации
+                            <ul>
+                                <li>Технико-экономические показатели</li>
+                                <li>Планировка территории и инженерные сети</li>
+                                <li>Архитектурно-планировочные решения</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <span class="concept__content-row">
+                        <img src="img/concept/photo4.webp" alt="photo">
+                        <ul class="green">
+                            <li>Бассейны, купели</li>
+                            <li>Ограждающие конструкции</li>
+                            <li>Кровля</li>
+                            <li>Внутренняя отделка зданий</li>
+                            <li>Наружная отделка и цветовые решения фасадов</li>
+                            <li>Внутренняя отделка</li>
+                            <li>Устройство и покрытия полов</li>
+                            <li>Лестничные клетки, двери</li>
+                            <li>Грузоподъемные механизмы</li>
+                            <li>Котельная, газораспределительный пункт</li>
+                        </ul>
+                    </span>
+                    <span class="concept__content-row">
+                        <ul>
+                            <li>
+                                Конструктивные решения
+                                <span class="concept__content-row">
+                                    <ul class="green">
+                                        <li>Гидроизоляция</li>
+                                        <li>Усиление каркаса</li>
+                                        <li>Стены наружные</li>
+                                        <li>Стены, внутренние</li>
+                                        <li>Стены, внутренние перегородки</li>
+                                        <li>Лестничные марши, клетки, лифтовые шахты</li>
+                                        <li>Кровля здания</li>
+                                        <li>Конструкции металлические</li>
+                                    </ul>
+                                </span>
+                            </li>
+                            <li>
+                                Инженерные системы
+                                <ul class="green">
+                                    <li>Электроснабжение</li>
+                                    <li>Насосная</li>
+                                    <li>Котельная</li>
+                                    <li>Водоснабжение</li>
+                                    <li>Электроснабжение</li>
+                                    <li>Теплоснабжение</li>
+                                    <li>Вентиляция</li>
+                                    <li>Кондиционирование</li>
+                                </ul>
+                            </li>
+                            <li>Сети связи</li>
+                            <li>Системы безопасности</li>
+                            <li>Системы безопасности</li>
+                            <li>Автоматизация инженерных систем</li>
+                            <li>Пожарная сигнализация</li>
+                            <li>Технология общепит</li>
+                        </ul>
+                        <img src="img/concept/photo5.webp" alt="photo">
+                    </span>
+                    <ol start="6">
+                        <li>Экспликация поэтажных планов</li>
+                        <li>Графические материалы</li>
+                        <li>Технологические карты (блоки бань, саун, парных,  лестничных клеток,  сан. узлов, душевых, зон бассейнов) с указанием необходимого перечня материалов, поставщиков, рекомендованных цен и технологии работы если необходимо.</li>
+                        <li>Анализ проектной документации на соответствие концепту,  технологии и выданному тех. заданию.</li>
+                    </ol>
+                    <img src="img//concept/photo6.webp" alt="photo">
+                </div>
+                <div class="concept__menu">
+                    <button class="concept__menu-close">
+                        <img src="img/close.png" alt="close">
+                        <img src="img/close-hover.png" alt="close">
+                    </button>
+                    <div class="concept__menu-ul">
+                        <a href="#" class="concept__menu-link">
+                            <span class="concept__menu-link-num">01</span>
+                            <span class="concept__menu-link-text">Концепт- это пакет <br> документов</span>
+                        </a>
+                        <a href="#" class="concept__menu-link">
+                            <span class="concept__menu-link-num">02</span>
+                            <span class="concept__menu-link-text">Перечень работ <br> при управлении <br> ЦЗиО</span>
+                        </a>
+                        <a href="#" class="concept__menu-link">
+                            <span class="concept__menu-link-num">03</span>
+                            <span class="concept__menu-link-text">Прайс-лист</span>
+                        </a>
+                        <a href="#" class="concept__menu-link">
+                            <span class="concept__menu-link-num">04</span>
+                            <span class="concept__menu-link-text">Что входит <br> в договор-концепт</span>
+                        </a>
+                        <a href="#" class="concept__menu-link">
+                            <span class="concept__menu-link-num">05</span>
+                            <span class="concept__menu-link-text">Что входит в <br> договор-франшизы</span>
+                        </a>
+                        <a href="#" class="concept__menu-link">
+                            <span class="concept__menu-link-num">06</span>
+                            <span class="concept__menu-link-text">Что входит <br> во франшизу</span>
+                        </a>
+                        <a href="#" class="concept__menu-link">
+                            <span class="concept__menu-link-num">07</span>
+                            <span class="concept__menu-link-text">Что входит <br> в концепт</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.section concept -->
+
+  </main>
+
+  <footer class="section footer">
+    <div class="container footer__container">
+      <h3 class="footer__title">Город, в котором <br> <span class="footer__title-color">есть Термы</span> – <br> <span class="footer__title-low">это город</span> <br> для достойной жизни</h3>
+      <div class="footer__row">
+        <div class="footer__box">
+          <div class="footer__logo">
+            <img src="img/logo-black.png" alt="terms">
+          </div>
+          <div class="footer__politics desktop">
+            Политика конфиденциальности
+            <span>© 2025 Городские Термы</span>
+          </div>
+        </div>
+        <div class="footer__wrap">
+          <a href="tel:88002506355" class="footer__tel">8 (800) 250-63-55</a>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link">
+              <img src="img/whatsapp.png" alt="WhatsApp">
+              <img src="img/whatsapp-hover.png" alt="WhatsApp">
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="img/vk.png" alt="vkontakte">
+              <img src="img/vk-hover.png" alt="vkontakte">
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="img/tg.png" alt="telegram">
+              <img src="img/tg-hover.png" alt="telegram">
+            </a>
+          </div>
+          <div class="footer__kulagin desktop">
+            <div class="footer__kulagin-title">Сайт разработан <br> экспертами:</div>
+            <a href="#" class="footer__kulagin-link">
+              <img src="img/kulagin.png" alt="kulagin">
+              <img src="img/kulagin-hover.png" alt="kulagin">
+            </a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <div class="footer__block">
+            <a href="#" class="footer__block-link">Обращение руководителя</a>
+            <a href="#" class="footer__block-link">Инвесторам</a>
+            <a href="#" class="footer__block-link">Застройщикам</a>
+            <a href="#" class="footer__block-link">Предпринимателям</a>
+            <a href="#" class="footer__block-link">Губернаторам</a>
+            <a href="#" class="footer__block-link">Почему мы лучшие?</a>
+            <a href="#" class="footer__block-link">Статьи</a>
+          </div>
+          <div class="footer__block">
+            <a href="#" class="footer__block-link">Термы, которыми мы гордимся</a>
+            <a href="#" class="footer__block-link">Путь инвестора</a>
+            <a href="#" class="footer__block-link">200 стандартов качества</a>
+            <a href="#" class="footer__block-link">Нам доверяют</a>
+            <a href="#" class="footer__block-link">Новости</a>
+            <a href="#" class="footer__block-link">Контакты</a>
+            <a href="#" class="footer__block-link">Наши вакансии</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__politics">
+          Политика конфиденциальности
+          <span>© 2025 Городские Термы</span>
+        </div>
+        <div class="footer__kulagin">
+          <div class="footer__kulagin-title">Сайт разработан <br> экспертами:</div>
+          <a href="#" class="footer__kulagin-link">
+            <img src="img/kulagin.png" alt="kulagin">
+            <img src="img/kulagin-hover.png" alt="kulagin">
+          </a>
+        </div>
+    </div>
+  </footer>
+  <!-- /.section footer -->
+
+  <div class="modal">
+    <div class="modal__container">
+      <div class="modal__dialog">
+        <button data-modal-close class="modal__close">
+          <img src="img/close.png" alt="close">
+          <img src="img/close-hover.png" alt="close">
+        </button>
+        <form class="modal__form form success">
+          <div class="form__success">
+            <h3 class="form__title">Ваша заявка <br> успешно отправлена</h3>
+            <div class="form__subtitle">Наш представитель свяжется <br> с вами в самые короткие сроки</div>
+            <button data-modal-close class="form__button button success">Вернуться на страницу</button>
+          </div>
+          <div class="form__content">
+            <h3 class="form__title">Заполните заявку</h3>
+            <div class="form__subtitle">Напишите или позвоните нам</div>
+            <div class="form__fields">
+              <div class="input-group form__input-group">
+                <input type="text" placeholder="Ваше имя" class="input form__input">
+              </div>
+              <div class="input-group form__input-group">
+                <input type="text" placeholder="Город" class="input form__input">
+              </div>
+              <div class="input-group form__input-group">
+                <input type="email" placeholder="E-mail" class="input form__input">
+              </div>
+              <div class="input-group form__input-group">
+                <input type="tel" placeholder="+7 (___)______" class="input form__input">
+              </div>
+            </div>
+            <label class="politics form__politics">
+              <input checked type="checkbox" class="politics__input">
+              <span class="politics__ok"></span>
+              <span class="politics__text">Я согласен на <a href="#">обработку персональных данных</a></span>
+            </label>
+            <button class="form__button button">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

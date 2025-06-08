@@ -74,7 +74,7 @@
                 <img src="img/tg-hover.png" alt="telegram">
               </a>
             </div>
-            <button class="button header__button">Оставить заявку</button>
+            <button data-modal class="button header__button">Оставить заявку</button>
           </div>
         </div>
       </div>
@@ -952,6 +952,48 @@
     </div>
   </footer>
   <!-- /.section footer -->
+
+  <div class="modal">
+    <div class="modal__container">
+      <div class="modal__dialog">
+        <button data-modal-close class="modal__close">
+          <img src="img/close.png" alt="close">
+          <img src="img/close-hover.png" alt="close">
+        </button>
+        <form class="modal__form form success">
+          <div class="form__success">
+            <h3 class="form__title">Ваша заявка <br> успешно отправлена</h3>
+            <div class="form__subtitle">Наш представитель свяжется <br> с вами в самые короткие сроки</div>
+            <button data-modal-close class="form__button button success">Вернуться на страницу</button>
+          </div>
+          <div class="form__content">
+            <h3 class="form__title">Заполните заявку</h3>
+            <div class="form__subtitle">Напишите или позвоните нам</div>
+            <div class="form__fields">
+              <div class="input-group form__input-group">
+                <input type="text" placeholder="Ваше имя" class="input form__input">
+              </div>
+              <div class="input-group form__input-group">
+                <input type="text" placeholder="Город" class="input form__input">
+              </div>
+              <div class="input-group form__input-group">
+                <input type="email" placeholder="E-mail" class="input form__input">
+              </div>
+              <div class="input-group form__input-group">
+                <input type="tel" placeholder="+7 (___)______" class="input form__input">
+              </div>
+            </div>
+            <label class="politics form__politics">
+              <input checked type="checkbox" class="politics__input">
+              <span class="politics__ok"></span>
+              <span class="politics__text">Я согласен на <a href="#">обработку персональных данных</a></span>
+            </label>
+            <button class="form__button button">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
 

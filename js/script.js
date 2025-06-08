@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function modal(modal, modalActiveClass, triggers, modalClose) {
     const triggers_ = document.querySelectorAll(triggers),
       modal_ = document.querySelector(modal),
-      modalClose_ = document.querySelector(modalClose);
+      modalClose_ = document.querySelectorAll(modalClose);
 
     if (triggers_.length > 0) {
       triggers_.forEach(item => {
@@ -34,11 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
 
-      modalClose_.addEventListener('click', () => {
-        modal_.classList.remove(modalActiveClass);
-        document.body.style.overflow = '';
-        document.body.style.marginRight = '0px';
-      });
+      modalClose_.forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault()
+          modal_.classList.remove(modalActiveClass);
+          document.body.style.overflow = '';
+          document.body.style.marginRight = '0px';
+        });
+      })
 
       modal_.addEventListener('click', (e) => {
         if (e.target.classList.contains('modal__container')) {
@@ -50,7 +53,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  modal('.modal', 'modal--active', '[data-modal]', '.modal__close');
+  modal('.modal', 'modal--active', '[data-modal]', '[data-modal-close]');
+
+  //concept-menu
+  const conceptBurger = document.querySelector(".concept__burger")
+  const conceptMenu = document.querySelector(".concept__menu")
+  const conceptMenuClose = document.querySelector(".concept__menu-close")
+
+  conceptBurger?.addEventListener("click", () => {
+    conceptMenu?.classList.add("concept__menu--active")
+  })
+
+  conceptMenuClose?.addEventListener("click", () => {
+    conceptMenu?.classList.remove("concept__menu--active")
+  })
 
   //city
 
@@ -84,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  const swiper1 = new Swiper('.why__window', {
+  const swiperWhy = new Swiper('.why__window', {
     loop: true,
     slidesPerView: 'auto',
     spaceBetween: 20,
@@ -99,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  const swiper2 = new Swiper('.profit__window', {
+  const swiperProfit = new Swiper('.profit__window', {
     loop: true,
     slidesPerView: 'auto',
     spaceBetween: 20,
@@ -114,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  const swiper3 = new Swiper('.complex__window', {
+  const swiperComplex = new Swiper('.complex__window', {
     loop: true,
     slidesPerView: 'auto',
     spaceBetween: 20,
@@ -126,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  const swiper4 = new Swiper('.whom__window', {
+  const swiperWhom = new Swiper('.whom__window', {
     loop: true,
     slidesPerView: 'auto',
     spaceBetween: 20,
@@ -142,13 +158,28 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  const swiper5 = new Swiper('.news__window', {
+  const swiperNews = new Swiper('.news__window', {
     loop: true,
     slidesPerView: 'auto',
     spaceBetween: 20,
     navigation: {
       nextEl: '.news-arrow-next',
       prevEl: '.news-arrow-prev',
+    },
+  });
+
+  const swiperConcept = new Swiper('.concept__content-window', {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.concept-arrow-next',
+      prevEl: '.concept-arrow-prev',
+    },
+    breakpoints: {
+      1280: {
+        spaceBetween: 0,
+      },
     },
   });
 
