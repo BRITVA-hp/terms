@@ -1,3 +1,89 @@
 .slider
     &__interface
         display: none
+    
+.interface-circle
+    display: flex
+    gap: 20px
+    align-items: flex-start
+    &-button
+        border: none
+        background: none
+        cursor: pointer
+        display: flex
+        width: max-content
+        min-width: max-content
+        img
+            &:last-child
+                display: none
+        &:hover
+            img
+                &:first-child
+                    display: none
+                &:last-child
+                    display: block
+
+.form
+    background: url("../img/bg.webp") no-repeat center/cover
+    padding: 70px 25px 90px
+    position: relative
+    &__title
+        font-size: 28px
+        line-height: 38px
+        color: #fff
+        font-weight: 700
+        font-family: OpenSans, sans-serif
+        text-align: center
+        margin-bottom: 12px
+    &__subtitle
+        font-size: 22px
+        line-height: 30px
+        color: #ffffff
+        font-weight: 300
+        font-family: OpenSans
+        text-align: center
+        margin-bottom: 10px
+    &__fields
+        display: flex
+        flex-direction: column
+        gap: 10px
+        margin: 0 auto 40px
+        max-width: 460px
+    &__politics
+        margin-bottom: 30px
+    &__button
+        padding: 0 33px
+        background: #fff
+        margin: 0 auto
+        color: #000
+        font-size: 19px
+        line-height: 20px
+        max-width: max-content
+        &:hover
+            background: #00adef
+    &__content
+        width: 100%
+        transition: 0.3s
+    &__success
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        gap: 16px
+        transition: 0.3s
+        visibility: hidden
+        opacity: 0
+        padding: 20px
+    &.success
+        .form
+            &__content
+                opacity: 0
+                visibility: hidden
+            &__success
+                visibility: visible
+                opacity: 1

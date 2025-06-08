@@ -1,6 +1,33 @@
 @media screen and (min-width: 1280px)
     .container
         max-width: 1140px
+    .input
+        font-size: 23px
+    .politics
+        justify-content: flex-start
+        &__text
+            max-width: none
+
+    .form
+        &__success
+            gap: 26px
+        &__fields
+            gap: 20px
+            margin-bottom: 45px
+        &__title
+            font-size: 48px
+            line-height: 110%
+            margin-bottom: 20px
+        &__subtitle
+            font-size: 30px
+            line-height: 110%
+            margin-bottom: 40px
+        &__politics
+            margin-bottom: 50px
+        &__button
+            min-height: 70px
+            padding: 0 40px
+            font-size: 24px
 
     .slider
         &__interface
@@ -21,6 +48,80 @@
             transition: 0.3s
             &:hover
                 background: #1588bd
+
+    .footer
+        &__title
+            margin-bottom: 50px
+        &__kulagin
+            display: none
+            &-title
+                font-size: 20px
+            &-link
+                width: 125px
+            &.desktop
+                display: flex
+                flex-direction: column
+                gap: 18px
+                align-items: flex-start
+        &__box
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+        &__logo
+            margin: 0
+        &__politics
+            display: none
+            &.desktop
+                display: block
+        &__box
+            order: 1
+        &__links
+            order: 2
+        &__wrap
+            order: 3
+            align-items: flex-start
+            margin: 0
+        &__row
+            display: flex
+            justify-content: space-between
+            align-items: stretch
+            margin: 0
+            gap: 30px
+
+    .news
+        &__interface
+            display: flex
+            gap: 50px
+        &__row
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 40px
+        &__title
+            text-align: left
+        &__field
+            gap: 10px
+        &__card
+            width: 700px !important
+            &-img
+                margin-bottom: 35px
+            &-title
+                font-size: 28px
+                line-height: 42px
+                margin-bottom: 22px
+            &-text
+                font-size: 22px
+                line-height: 36px
+            &-link
+                font-size: 23px
+
+    .send
+        &__form
+            padding: 160px 20px
+
+    .best
+        &__row
+            gap: 40px
 
     .complex
         &__info

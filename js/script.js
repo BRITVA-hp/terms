@@ -126,4 +126,30 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  const swiper4 = new Swiper('.whom__window', {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    enabled: false,
+    navigation: {
+      nextEl: '.whom-arrow-next',
+      prevEl: '.whom-arrow-prev',
+    },
+    breakpoints: {
+      1024: {
+        enabled: true,
+      },
+    },
+  });
+
+  const swiper5 = new Swiper('.news__window', {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.news-arrow-next',
+      prevEl: '.news-arrow-prev',
+    },
+  });
+
 })
