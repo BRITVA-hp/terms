@@ -70,35 +70,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //city
 
-  const cityBtn = document.querySelector("#city-btn")
-  const cityMenu = document.querySelector("#city-menu")
-  const cityClose = document.querySelector("#city-close")
-  const cityList = document.querySelectorAll(".header__city-li")
+  const cityBtn = document.querySelector("#city-btn");
+  const cityMenu = document.querySelector("#city-menu");
+  const cityClose = document.querySelector("#city-close");
+  const cityList = document.querySelectorAll(".header__city-li");
 
-  cityBtn?.addEventListener("click", () => {
-    cityMenu?.classList.toggle("active")
-  })
+  function closeCityMenu() {
+    cityMenu?.classList.remove("active");
+    document.removeEventListener("click", outsideClickListener);
+  }
 
-  cityClose?.addEventListener("click", () => {
-    cityMenu?.classList.remove("active")
-  })
+  function outsideClickListener(e) {
+    
+    if (!cityMenu?.contains(e.target) && !cityBtn?.contains(e.target)) {
+      closeCityMenu();
+    }
+  }
 
-  for (let i = 0; i < cityList.length; i++) {
-    const city = cityList[i]
+  cityBtn?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    cityMenu?.classList.toggle("active");
 
-    if (cityList[i].textContent === cityBtn.textContent) {
-      cityList[i].classList.add("active")
+    if (cityMenu?.classList.contains("active")) {
+      document.addEventListener("click", outsideClickListener);
+    } else {
+      document.removeEventListener("click", outsideClickListener);
+    }
+  });
+
+  cityClose?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    closeCityMenu();
+  });
+
+  cityList.forEach(city => {
+    if (city.textContent === cityBtn.textContent) {
+      city.classList.add("active");
     }
 
     city.addEventListener("click", () => {
-      cityBtn.textContent = city.textContent
-      cityMenu?.classList.remove("active")
-      cityList.forEach(el => {
-        el.classList.remove("active")
-      })
-      city.classList.add("active")
-    })
-  }
+      cityBtn.textContent = city.textContent;
+      cityList.forEach(el => el.classList.remove("active"));
+      city.classList.add("active");
+      closeCityMenu();
+    });
+  });
 
   const swiperWhy = new Swiper('.why__window', {
     loop: true,
@@ -143,7 +159,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const swiperWhom = new Swiper('.whom__window', {
-    loop: true,
     slidesPerView: 'auto',
     spaceBetween: 20,
     enabled: false,
@@ -159,7 +174,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const swiperNews = new Swiper('.news__window', {
-    loop: true,
     slidesPerView: 'auto',
     spaceBetween: 20,
     navigation: {

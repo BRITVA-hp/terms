@@ -44,6 +44,7 @@
             display: none
             &-title
                 font-size: 20px
+                line-height: 24px
             &-link
                 width: 125px
             &.desktop
@@ -148,11 +149,14 @@
         &__box
             border: 1px solid #000000
             padding: 44px 20px 80px
+            border-top: none
             &-text
                 text-align: left
                 max-width: 400px
         &__form
             flex-direction: row
+        &__info
+            text-align: left
 
     .profit
         &__interface
@@ -196,15 +200,18 @@
             &-item
                 display: flex
                 gap: 40px
-                align-items: center
+                align-items: flex-start
                 &-content
                     max-width: 406px
                 &-line
+                    margin-top: 15px
                     height: 2px
                     background: #000
                     width: 100px
                     min-width: 100px
                     display: block
+                &-text
+                    line-height: 26px
 
     .main
         min-height: 660px
@@ -213,6 +220,7 @@
             right: 0
         &__title
             font-size: 110px
+            transform: translateX(-7px)
         &__subtitle
             font-size: 30px
             line-height: 140%

@@ -3,7 +3,7 @@
     &__burger
         position: fixed
         right: 18px
-        top: 304px
+        top: 80px
         width: 62px
         height: 62px
         border-radius: 50%
@@ -90,7 +90,7 @@
         color: #000000
         font-family: AGCrownStyle, sans-serif
         text-align: center
-        margin-bottom: 25px
+        margin-bottom: 18px
         span
             color: #00aeef
     &__content
@@ -116,7 +116,11 @@
             font-weight: 300
             font-family: OpenSans, sans-serif
             margin: 26px 0
+        p
+            &:first-child
+                margin-top: 0
         ol
+            list-style-type: decimal-leading-zero
             padding-left: 18px
             li
                 padding-left: 10px
@@ -136,16 +140,22 @@
                     position: absolute
                     left: 0
                     top: 7px
-                    width: 10px
-                    height: 10px
+                    width: 9px
+                    height: 9px
                     background: #00aeef
             &.green
                 li
                     &::before
                         top: 10px
+                        width: 5px
+                        height: 5px
+                        background: #a5cd39
+            &.pl
+                padding-left: 22px
+                li
+                    &::before
                         width: 7px
                         height: 7px
-                        background: #a5cd39
         li
             margin: 15px 0
             &:last-child
@@ -154,6 +164,11 @@
                 margin-top: 0
             ul, ol
                 margin-top: 26px
+            ul
+                li
+                    &::before
+                        width: 7px
+                        height: 7px
         h2, h3
             font-size: 26px
             line-height: 36px

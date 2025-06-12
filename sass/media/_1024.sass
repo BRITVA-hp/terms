@@ -12,7 +12,7 @@
       font-size: 60px
       line-height: 78px
       text-align: left
-      margin-bottom: 55px
+      margin-bottom: 48px
     &__interface
       display: flex
     &__content
@@ -29,14 +29,34 @@
         ul, ol
           margin-top: 0
       ul
+        li
+          padding-left: 35px
+          &::before
+            width: 12px
+            height: 12px
+            top: 12px
         &.pl
           padding-left: 28px
+          li
+            &::before
+              width: 10px
+              height: 10px
+        &.green
+          li
+            padding-left: 25px
+            &::before
+              top: 15px
       p, ul, ol
         font-size: 25px
         line-height: 39px
         margin-bottom: 50px
       li
-        margin: 25px 0
+        margin: 18px 0
+        ul
+          li
+            &::before
+                width: 10px
+                height: 10px
       h2, h3
         font-size: 45px
         line-height: 55px
@@ -44,20 +64,8 @@
       ol
         li
           &::marker
-              font-size: 20px
+              font-size: 22px
               line-height: 110%
-      ul
-        li
-          padding-left: 35px
-          &::before
-              width: 13px
-              height: 13px
-              top: 12px
-        &.green
-          li
-            padding-left: 25px
-            &::before
-              top: 15px
 
   .send
     position: relative
@@ -177,6 +185,8 @@
           background: #fff
           right: calc(100% + 25px)
           top: 15px
+      &-num
+        margin-top: 2px
 
   .king
     &__row
@@ -205,6 +215,11 @@
       grid-area: 1/2/2/3
       margin: -100px 0 0
       min-width: 320px
+      &-item
+        &-text
+          &.small
+            font-size: 32px
+            line-height: 27px
     &__link
       grid-area: 2/2/3/3
       margin: 0 0 0 auto
